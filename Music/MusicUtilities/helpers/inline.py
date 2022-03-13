@@ -20,8 +20,7 @@ def play_markup(videoid, user_id):
                 InlineKeyboardButton(text="🖱 ᴍᴇɴᴜ", callback_data=f'other {videoid}|{user_id}'),
             ],
             [
-                InlineKeyboardButton(text=f"✨ ɢʀᴏᴜᴘ", url=f"https://t.me/{ZAID_SUPPORT}"),
-                InlineKeyboardButton(text=f"📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                InlineKeyboardButton(text=f"✨ ᴏᴡɴᴇʀ", url=f"https://t.me/bukanyesus")
             ],
             [      
                 InlineKeyboardButton(text="🗑 ᴄʟᴏsᴇ", callback_data=f'close2')
@@ -89,7 +88,7 @@ def audio_markup(videoid, user_id):
             ],
             [
                 InlineKeyboardButton(text=f"✨ ɢʀᴏᴜᴘ", url=f"https://t.me/{ZAID_SUPPORT}"),
-                InlineKeyboardButton(text=f"📣 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                InlineKeyboardButton(text=f"💓 ᴏᴡɴᴇʀ", url=f"https://t.me/bukanyesus"),
             ],
             [
                 InlineKeyboardButton(text="🗑 Close", callback_data="close2")              
