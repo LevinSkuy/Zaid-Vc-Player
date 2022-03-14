@@ -26,7 +26,7 @@ async def ping(_, message):
     start = datetime.now()
     response = await message.reply_photo(
         photo="cache/pong.jpg",
-        caption=">> ZPong!"
+        caption=">> Oukeen Pong!"
     )
     end = datetime.now()
     resp = (end - start).microseconds / 1000
