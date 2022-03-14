@@ -234,7 +234,7 @@ async def play(_, message: Message):
         if len(message.command) < 2:
             what = "Command"
             user_name = message.from_user.first_name
-            thumb ="cache/nofound.jpg"
+            thumb ="cache/lepinn.jpeg"
             buttons = playlist_markup(user_name, user_id)
             hmo = await message.reply_photo(
             photo=thumb, 
@@ -266,7 +266,7 @@ async def play(_, message: Message):
             ID5 = (result[4]["id"])
         except Exception as e:
             return await mystic.edit_text(f"❌ Soung Not Found.\n**Possible Reason:**{e}")
-        thumb ="cache/playlistthumb.jpg"
+        thumb ="cache/lepinn.jpeg"
         await mystic.delete()   
         buttons = search_markup(ID1, ID2, ID3, ID4, ID5, duration1, duration2, duration3, duration4, duration5, user_id, query)
         hmo = await message.reply_photo(
@@ -549,7 +549,7 @@ async def popat(_,CallbackQuery):
         
 @app.on_message(filters.command("playplaylist"))
 async def play_playlist_cmd(_, message):
-    thumb ="cache/playlistthumb.jpg"
+    thumb ="cache/lepinn.jpeg"
     user_id = message.from_user.id
     user_name = message.from_user.first_name
     buttons = playlist_markup(user_name, user_id)
